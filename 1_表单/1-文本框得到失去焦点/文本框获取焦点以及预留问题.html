@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div{
+			padding: 3px;
+		}
+		.focus{
+			background: #fcc;
+		}
+	</style>
+	<script src='jquery-1.11.3.min.js'></script>
+	<script>
+		$(function(){
+			$(':input').on('focus',function(){
+				console.log(this.defaultValue);
+				$(this).addClass('focus');
+				if ($(this).val() == this.defaultValue) {
+					this.value = '';
+				}
+			}).blur(function(){
+			$(this).removeClass('focus').val(this.value==''?this.defaultValue:this.value);
+		});
+		})
+	</script>
+</head>
+<body>
+	<form action="">
+		<fieldset>
+		<legend>个人基本信息</legend>
+			<div>
+				<label for="name">名称:</label>
+				<input type="text" id="name" value="名称">
+			</div>
+			<div>
+				<label for="mima">密码:</label>
+				<input type="password" id="mima" value="密码">
+			</div>
+			<div>
+				<label for="detail">详细信息:</label>
+				<textarea name="" id="detail" cols="20" rows="2">详细信息</textarea>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

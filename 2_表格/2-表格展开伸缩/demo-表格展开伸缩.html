@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title></title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--   ÒýÈëjQuery -->
+<!--   引入jQuery --><script src='jquery-1.11.3.min.js'></script>
+<script src="demo.js" type="text/javascript"></script>
+<script type="text/javascript">
+	/*
+		±í¸ñÕ¹¿ªÉìËõ£¬¹¦ÄÜ£¬µã»÷±í¸ñÖÐ´ú±í¸¸¼¶µÄÐÐ£¬ÔòÏÔÊ¾ÓëÒþ²Ø´ú±íÆä×Ó¼¶µÄÐÐ
+	*/
+	//ÎÄµµ¾ÍÐ÷º¯Êý
+	$(function(){
+		//Ë¼Â·£ºÓÉÓÚ´æÔÚ¸¸-×Ó¼¶¹ØÏµ£¬ËùÒÔ¿ÉÒÔ¿¼ÂÇÕâÑùÒ»ÖÖ·½Ê½£º
+		//      ½«´ú±í¸¸¼¶µÄÔªËØµÄidÉèÖÃ³Érow_01¡¢row_02ÕâÑùµÄÃüÃû¹æÔò£¬È»ºó½«×Ó¼¶ÔªËØµÄclassÃüÃûchild_row_01¡¢child_row_02ÕâÑùµÄÐÎÊ½
+		//      ÄÇÃ´child_row_01¡¢child_row_02Óërow_01ÐÎ³ÉÁËÒ»ÖÖ±È½ÏÃ÷ÏÔµÄ¶ÔÓ¦ÓÐ¹ØÏµ£¬È»ºóÀûÓÃÕâÖÖ¶ÔÓ¦ÓÐ¹ØÏµÕÒµ½Ä³¸¸¼¶ÔªËØ¶ÔÓ¦µÄ×Ó¼¶ÔªËØ
+		//ÌáÊ¾£ºÈçºÎ Òþ²Ø/ÏÔÊ¾ ÔªËØ£¿²Î¼ûtoggleº¯Êý
+	})
+</script>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr><th>ÐÕÃû</th><th>ÐÔ±ð</th><th>ÔÝ×¡µØ</th></tr>
+		</thead>
+		<tbody>
+			<tr class="parent" id="row_01"><td colspan="3">Ç°Ì¨Éè¼Æ×é</td></tr>
+			<tr class="child_row_01"><td>ÕÅÉ½</td><td>ÄÐ</td><td>Õã½­Äþ²¨</td></tr>
+			<tr class="child_row_01"><td>ÀîËÄ</td><td>Å®</td><td>Õã½­º¼ÖÝ</td></tr>
+
+			<tr class="parent" id="row_02"><td colspan="3">Ç°Ì¨¿ª·¢×é</td></tr>
+			<tr class="child_row_02"><td>ÍõÎå</td><td>ÄÐ</td><td>ºþÄÏ³¤É³</td></tr>
+			<tr class="child_row_02"><td>ÕÒÁù</td><td>ÄÐ</td><td>Õã½­ÎÂÖÝ</td></tr>
+
+			<tr class="parent" id="row_03"><td colspan="3">ºóÌ¨¿ª·¢×é</td></tr>
+			<tr class="child_row_03"><td>Rain</td><td>ÄÐ</td><td>Õã½­º¼ÖÝ</td></tr>
+			<tr class="child_row_03"><td>MAXMAN</td><td>Å®</td><td>Õã½­º¼ÖÝ</td></tr>
+		</tbody>
+	</table>
+
+</body>
+</html>

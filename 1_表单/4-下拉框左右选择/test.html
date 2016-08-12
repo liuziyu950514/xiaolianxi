@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		#div1{
+			width: 100;
+			height: 200px;
+			background: red;
+		}
+		#div3{
+			width: 100px;
+			height: 200px;
+			background: yellow;
+		}
+	</style>
+	<!--   引入jQuery --><script src='jquery-1.11.3.min.js'></script>
+
+</head>
+<body>
+	<div id="div1">
+		<div id="div2">asd</div>
+	</div>
+	<div id="div3">
+		<div id="div4">qwe</div>
+	</div>
+	<script>
+		$('#div2').appendTo('#div3');
+	</script>
+	
+</body>
+</html>
